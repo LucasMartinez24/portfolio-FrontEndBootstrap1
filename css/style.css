@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+}
+body {
+  background-color: #bfe5ff;
+}
+nav{
+  background-color: #00358d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+}
+nav .logo{
+  height: 70px;
+  margin-left: -120px;
+} 
+nav .nav-links{
+  list-style: none;
+
+}
+nav .nav-links li{
+  display: inline-block;
+  padding: 0 20px;
+  transition: 0.5s;
+}
+nav .nav-links li:hover{
+  transform: scale(1.1);
+}
+nav .nav-links a{
+  font-size: 700;
+  color: #eceff1;
+  text-decoration: none;
+}
+nav .nav-links li a:hover{
+  color: #80ccff;
+}
+nav .btn button{
+  font-weight: 700;
+  color: #003b63;
+  padding: 9px 25px;
+  background: #eceff1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.7s ease 0s;
+}
+nav .btn button:hover{
+  background: #003b63;
+  color: #eceff1;
+  transform: scale(1.1);
+}
+.perfil-usuario {
+  color: #eceff1;
+}
+.perfil-usuario .sombra {
+  position: absolute;
+  display: block;
+  background: linear-gradient(transparent,rgba(0, 0, 0, .5));
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+}
+.perfil-usuario .portada-perfil{
+  background-image: url('/img/photo-1542831371-29b0f74f9713.jfif');
+}
+.perfil-usuario .portada-perfil,
+.perfil-usuario .sombra {
+  border-radius: 0 0 20px 20px;
+}
+.perfil-usuario img {
+  width: 100%;
+}
+.contenedor-perfil {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.perfil-usuario .contenedor-perfil {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.perfil-usuario .portada-perfil {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 20rem;
+  margin-bottom: .5rem;
+}
+.perfil-usuario .avatar-perfil {
+  display: block;
+  width: 230px;
+  height: 230px;
+  background-color: #D9DCF1;
+  position: absolute;
+  bottom: -65px;
+  left: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 8px solid #FFFFFF;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, .2);
+  z-index: 100;
+}
+.perfil-usuario .titulo-usuario {
+  font-size: 2.3rem;
+  white-space: nowrap;
+  margin-bottom: .5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.perfil-usuario .datos-perfil {
+  position: absolute;
+  display: block;
+  width: calc(100% - 230px - 8rem);
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+.perfil-usuario .bio-usuario {
+  font-size: 1em;
+  margin-bottom: .75rem;
+}
+.perfil-usuario .icono-perfil {
+  display: none;
+  margin-right: .75rem;
+}
+.titulo-seccion h2{
+  font-family: 'Josefin Sans', sans-serif;;
+  color: #7b7992;
+  font-size: 75px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+}
+.experiencia{
+  height: 350px;
+  width: 100%;
+  max-width: 1024px;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 25px;
+}
+.experiencia .datos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 360px;
+}
+.experiencia .datos .img{
+  height: 260px;
+  width: 260px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 100%;
+  border: 8px solid #003b63;
+}
+.experiencia .datos .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.experiencia .datos .contenido{
+  padding: 0 20px 0 35px;
+  width: 530px;
+  margin-left: 50px;
+}
+.experiencia .datos .contenido span{
+  display: block;
+  color: #7b7992;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.experiencia .datos .contenido .titulo{
+  font-size: 30px;
+  font-weight: 700;
+  color:#0d0925;
+  margin-bottom: 20px;
+}
+.experiencia .datos .contenido .texto{
+  font-size: 19px;
+  color:#4e4a67;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+  text-align: justify;
+}
